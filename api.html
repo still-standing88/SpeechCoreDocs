@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Documentation &mdash; SpeechCore  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="SpeechCore Documentation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            SpeechCore
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SpeechCore</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">API Documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="api-documentation">
+<h1>API Documentation<a class="headerlink" href="#api-documentation" title="Link to this heading"></a></h1>
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">SpeechCore.h</span></span></dt>
+<dd><div class="docutils container">
+<em>#include &lt;stdint.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;stdbool.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;wchar.h&gt;</em></div>
+<p>Cross-platform C++ library for screen reader output. &#64;Copyright (C) 2024 Oussama Ben Gatrane &#64;license This product is licensed under the MIT License. See the license file for the full license text. </p>
+<p>SpeechCore.</p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference external" href="https://github.com/still-standing88/SpeechCore">https://github.com/still-standing88/SpeechCore</a> Version: 1.1.0 Author: [Oussama AKA Still standing] Description: Cross-platform C++ library for screen reader output. </p>
+</div>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c._SILENCE_CXX17_C_HEADER_DEPRECATION_WARNING">
+<span class="target" id="_speech_core_8h_1a1d0be57bc42af0a51193ea13dec33a45"></span><span class="sig-name descname"><span class="n"><span class="pre">_SILENCE_CXX17_C_HEADER_DEPRECATION_WARNING</span></span></span><a class="headerlink" href="#c._SILENCE_CXX17_C_HEADER_DEPRECATION_WARNING" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.SPEECH_C_API">
+<span class="target" id="_speech_core_8h_1a60f46950723b40c5a5017fdde38bebb1"></span><span class="sig-name descname"><span class="n"><span class="pre">SPEECH_C_API</span></span></span><a class="headerlink" href="#c.SPEECH_C_API" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.SC_SPEECH_FLOW_CONTROL">
+<span class="target" id="_speech_core_8h_1ab4764189e728e284f2cbe55af55a6598"></span><span class="sig-name descname"><span class="n"><span class="pre">SC_SPEECH_FLOW_CONTROL</span></span></span><a class="headerlink" href="#c.SC_SPEECH_FLOW_CONTROL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.SC_SPEECH_PARAMETER_CONTROL">
+<span class="target" id="_speech_core_8h_1a321d59670c1986f9122cd25fb99a72df"></span><span class="sig-name descname"><span class="n"><span class="pre">SC_SPEECH_PARAMETER_CONTROL</span></span></span><a class="headerlink" href="#c.SC_SPEECH_PARAMETER_CONTROL" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.SC_VOICE_CONFIG">
+<span class="target" id="_speech_core_8h_1af967fb64b1a922c0bc9b2c09cc2b5cc9"></span><span class="sig-name descname"><span class="n"><span class="pre">SC_VOICE_CONFIG</span></span></span><a class="headerlink" href="#c.SC_VOICE_CONFIG" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.SC_FILE_OUTPUT">
+<span class="target" id="_speech_core_8h_1abd024d32138823694189f6afdb19de52"></span><span class="sig-name descname"><span class="n"><span class="pre">SC_FILE_OUTPUT</span></span></span><a class="headerlink" href="#c.SC_FILE_OUTPUT" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.SC_HAS_SPEECH">
+<span class="target" id="_speech_core_8h_1a0f7dd117526530f3ba7d614617ddb1fe"></span><span class="sig-name descname"><span class="n"><span class="pre">SC_HAS_SPEECH</span></span></span><a class="headerlink" href="#c.SC_HAS_SPEECH" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.SC_HAS_BRAILLE">
+<span class="target" id="_speech_core_8h_1ac4efbf04aa63f836645a38c79aa94c39"></span><span class="sig-name descname"><span class="n"><span class="pre">SC_HAS_BRAILLE</span></span></span><a class="headerlink" href="#c.SC_HAS_BRAILLE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1a7accf6f3d4f1a62382eaedfd3e21e825"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">void</span> <span class="pre">Speech_Init</span> <span class="pre">()</span></span></dt>
+<dd><p>Initializes the SpeechCore library. Must be called before using other functions. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1aa856c44b19bd36b303cefd6eeb605fb7"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">void</span> <span class="pre">Speech_Free</span> <span class="pre">()</span></span></dt>
+<dd><p>Finalizes SpeechCore and frees up resources. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1a2b010ce1d3bd9bf0af79c5d61673213e"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">void</span> <span class="pre">Speech_Detect_Driver</span> <span class="pre">()</span></span></dt>
+<dd><p>Detects and selects an available screen reader. </p>
+<p>Loops through available screen readers detected on the platform and selects the first one that’s running. If prefer_sapi is set to true, it sets SAPI as the current screen reader. This function is called automatically by Speech_Init and Speech_Output. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1aa2676335190a715ce3c634d01c78a0f0"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">const</span> <span class="pre">wchar_t</span> <span class="pre">*</span> <span class="pre">Speech_Current_Driver</span> <span class="pre">()</span></span></dt>
+<dd><p>Retrieves the name of the currently detected/used screen reader. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A const wchar_t string representing the current driver name. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1a9e5a3342c10fd9ccabf1ccba0da49e09"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">const</span> <span class="pre">wchar_t</span> <span class="pre">*</span> <span class="pre">Speech_Get_Driver</span> <span class="pre">(int</span> <span class="pre">index)</span></span></dt>
+<dd><p>Retrieves the name of a screen reader driver by index. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>index</strong> – The index of the driver to retrieve. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A const wchar_t string representing the driver name. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1aa527d4a0aed574660db424e0c5fa7e8c"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">void</span> <span class="pre">Speech_Set_Driver</span> <span class="pre">(int</span> <span class="pre">index)</span></span></dt>
+<dd><p>Sets the current screen reader driver by index. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>index</strong> – The index of the driver to set as current. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1a60fa0f551cef11d7cb15ae31bfd39405"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">int</span> <span class="pre">Speech_Get_Drivers</span> <span class="pre">()</span></span></dt>
+<dd><p>Retrieves the number of available screen reader drivers. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>An integer representing the number of drivers. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1afa3952cbf760d00148d4189d95dba3c4"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">uint32_t</span> <span class="pre">Speech_Get_Flags</span> <span class="pre">()</span></span></dt>
+<dd><p>Retrieves the flags associated with the currently detected/used screen reader. </p>
+<p>The speech flags represent the features the screen reader supports. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>An uint32_t representing the speech flags. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1a9b5de3a80d51be10ef38cdf089a3088a"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">bool</span> <span class="pre">Speech_Is_Loaded</span> <span class="pre">()</span></span></dt>
+<dd><p>Checks if the library is loaded. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A bool representing if the library is loaded. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1a897897b12082708cb9931a935591a227"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">bool</span> <span class="pre">Speech_Is_Speaking</span> <span class="pre">()</span></span></dt>
+<dd><p>Checks if the current screen reader is actively speaking. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A bool representing the state of the screen reader’s speaking state. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1a7628426c45d50aeadeedca7131e9df04"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">bool</span> <span class="pre">Speech_Output</span> <span class="pre">(const</span> <span class="pre">wchar_t</span> <span class="pre">*text,</span> <span class="pre">bool</span> <span class="pre">_interrupt=false)</span></span></dt>
+<dd><p>Outputs a given string to be spoken by the currently used/detected screen reader. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> – A const wchar_t string representing the text to be spoken. </p></li>
+<li><p><strong>_interrupt</strong> – Whether to interrupt the current speech segment. Default is false. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A bool indicating if the operation was successful. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1a3aba4d9302918d4e768cdcd425534dde"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">bool</span> <span class="pre">Speech_Braille</span> <span class="pre">(const</span> <span class="pre">wchar_t</span> <span class="pre">*text)</span></span></dt>
+<dd><p>Outputs a given string to the braille display if supported. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>text</strong> – A const wchar_t string representing the text to be displayed in braille. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A bool indicating if the operation was successful. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1aa1e20ce36ed0889af48e0a6376e7a618"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">bool</span> <span class="pre">Speech_Stop</span> <span class="pre">()</span></span></dt>
+<dd><p>Stops speaking if the screen reader is currently speaking. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A bool indicating if the operation was successful. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1a99d76d1998125ce111e6d710712d0f82"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">float</span> <span class="pre">Speech_Get_Volume</span> <span class="pre">()</span></span></dt>
+<dd><p>Gets the volume of the current screen reader if supported. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A float representing the volume. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1ae810178a136be09e0eb74b4d6662f85a"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">void</span> <span class="pre">Speech_Set_Volume</span> <span class="pre">(float</span> <span class="pre">offset)</span></span></dt>
+<dd><p>Sets the volume for the current screen reader if supported. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>offset</strong> – A float representing the volume to be set. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1abbf6dfe5bf547c73c2910b778f4b0bfe"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">float</span> <span class="pre">Speech_Get_Rate</span> <span class="pre">()</span></span></dt>
+<dd><p>Gets the rate/speed parameter for the current screen reader if supported. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A float representing the rate value. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1a0e60216106143c5005f962fab35e8b92"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">void</span> <span class="pre">Speech_Set_Rate</span> <span class="pre">(float</span> <span class="pre">offset)</span></span></dt>
+<dd><p>Sets the rate/speed for the current screen reader if supported. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>offset</strong> – A float representing the rate to be set. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1a415fb00f8cc7522b34affb198f9bbe5a"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">const</span> <span class="pre">wchar_t</span> <span class="pre">*</span> <span class="pre">Speech_Get_Current_Voice</span> <span class="pre">()</span></span></dt>
+<dd><p>Retrieves the current voice of the active screen reader if supported. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A const wchar_t string representing the voice name. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1a1034c7def56cdfa437be8502d678ad1a"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">const</span> <span class="pre">wchar_t</span> <span class="pre">*</span> <span class="pre">Speech_Get_Voice</span> <span class="pre">(int</span> <span class="pre">index)</span></span></dt>
+<dd><p>Retrieves the voice name of the given voice by its index for the currently active screen reader if supported. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>index</strong> – The index of the voice. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A const wchar_t string representing the name of the voice. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1aadd058e13ee65cd45347e3264684b698"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">void</span> <span class="pre">Speech_Set_Voice</span> <span class="pre">(int</span> <span class="pre">index)</span></span></dt>
+<dd><p>Sets the voice by its index for the currently active screen reader if supported. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>index</strong> – The index of the voice to set. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1aace8fdfdcab1ac52ad6a6f0789d2a09f"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">int</span> <span class="pre">Speech_Get_Voices</span> <span class="pre">()</span></span></dt>
+<dd><p>Retrieves the number of available voices in the currently active screen reader if supported. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>An integer representing the number of voices. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1acff5e16936eeac05e1f6684e4380ad38"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">void</span> <span class="pre">Speech_Output_File</span> <span class="pre">(const</span> <span class="pre">char</span> <span class="pre">*filePath,</span> <span class="pre">const</span> <span class="pre">wchar_t</span> <span class="pre">*text)</span></span></dt>
+<dd><p>Outputs the given text into a file for the currently active screen reader if supported. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filePath</strong> – A const char* representing the name of the file. </p></li>
+<li><p><strong>text</strong> – A const wchar_t string representing the text to be outputted. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1a44bb026e045d4e573e6264196cfb784a"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">void</span> <span class="pre">Speech_Resume</span> <span class="pre">()</span></span></dt>
+<dd><p>Resumes speech for the currently active screen reader if supported. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="_speech_core_8h_1a7648fe9f9e9e111f8f2155794a81f0cd"></span><span class="sig-name descname"><span class="pre">SPEECH_C_API</span> <span class="pre">void</span> <span class="pre">Speech_Pause</span> <span class="pre">()</span></span></dt>
+<dd><p>Pauses speech for the currently active screen reader if supported. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="dir_d44c64559bbebec7f509842c48db8b23"></span><em><span class="pre">dir</span></em> <span class="sig-name descname"><span class="pre">E:/dev/c++_libs/speechCore/REPO/include</span></span></dt>
+<dd></dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="SpeechCore Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Oussama Ben Gatrane.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

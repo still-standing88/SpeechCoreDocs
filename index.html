@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpeechCore Documentation &mdash; SpeechCore  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API Documentation" href="api.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            SpeechCore
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">SpeechCore</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">SpeechCore Documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="speechcore-documentation">
+<h1>SpeechCore Documentation<a class="headerlink" href="#speechcore-documentation" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Documentation</a></li>
+</ul>
+</div>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+<section id="speechcore">
+<h1>SpeechCore<a class="headerlink" href="#speechcore" title="Link to this heading"></a></h1>
+<p>SpeechCore is a cross-platform C++ library that abstracts the process of communicating with various screen readers, managing low-level details and providing a clean, simple-to-use interface. The library has implementations for other languages; see the wrappers section.</p>
+<section id="features">
+<h2>Features<a class="headerlink" href="#features" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Simple and intuitive API with straightforward usage.</p></li>
+<li><p>Cross-platform support for various screen readers, with the option to support additional ones.</p></li>
+</ul>
+</section>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h2>
+<p>Download the matching library build for your platform from
+<a class="reference external" href="https://github.com/still-standing88/SpeechCore/releases">the releases page</a> and link against the library (static or shared, depending on your choice).
+Then copy the contents of the include folder to your project directory and include SpeechCore.h.</p>
+</section>
+<section id="building">
+<h2>Building<a class="headerlink" href="#building" title="Link to this heading"></a></h2>
+<p>The GitHub repo includes a Visual Studio solution and a SConstruct file. If you’re using a different build system, keep the following notes in mind:</p>
+<ul class="simple">
+<li><p>To compile for either shared or static, define either <code class="docutils literal notranslate"><span class="pre">__SPEECH_C_EXPORT</span></code> (shared) or <code class="docutils literal notranslate"><span class="pre">SPEECH_C_STATIC</span></code> (static), depending on your choice.</p></li>
+<li><p>The library has JNI-defined .cpp and .h files for the Java interface. Ensure that you have the required Java include files and library available to compile with Java support. You can skip this by excluding the JNI-related files from your build process, as the library does not depend on them.</p></li>
+<li><p>Only include platform-related files when building for your target platform to avoid errors. For Windows, this means excluding SpeechDispatcher.cpp, AVTts.cpp, and AVSpeech.cpp from the building process.</p></li>
+<li><p>The Speech Dispatcher library is required when compiling for Linux. The library depends on it for Speech Dispatcher support.</p></li>
+<li><p>When compiling for Windows, you have to link against SAPI.LIB.</p></li>
+<li><p>To generate this documentation, you require Doxygen and Sphinx. The docs folder includes the requirements file for the documentation libraries.</p></li>
+</ul>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>Simple usage example:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;SpeechCore.h&gt;</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Speech_Init</span><span class="p">();</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Speech_Is_Loaded</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Current screen reader: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">Speech_Get_Current_Driver</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Speaking some text&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="n">Speech_Output</span><span class="p">(</span><span class="sa">L</span><span class="s">&quot;This is a test for the SpeechCore library. If you&#39;re hearing this, it indicates the library is functioning properly.&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">Speech_Free</span><span class="p">();</span><span class="w"> </span><span class="c1">// Free resources when you&#39;re done.</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>See the examples folder on the Github repo for more detailed usage.</p>
+</section>
+<section id="library-notes">
+<h2>Library Notes<a class="headerlink" href="#library-notes" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>The library requires specific binaries to interface with screen readers on Windows (NVDA, JAWS, Zhengdu, and System Access). You can find the respective binaries included with the source code; they must be included alongside the library in your project.</p></li>
+<li><p>The library has more control over SAPI 5 and allows changing of voice configuration and speech parameters. It also has more responsive output.</p></li>
+<li><p>The library has braille output functionality that is yet to be implemented. It includes abstract functions which can be implemented to support braille on NVDA, JAWS, and any other screen reader that may support it.</p></li>
+</ul>
+</section>
+<section id="list-of-supported-screen-readers">
+<h2>List of supported screen readers<a class="headerlink" href="#list-of-supported-screen-readers" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Windows: NVDA, JAWS, System Access, Zhengdu Screen Reader, SAPI 5</p></li>
+<li><p>macOS: AVSpeech</p></li>
+<li><p>Linux: Speech Dispatcher</p></li>
+</ul>
+</section>
+<section id="bindings">
+<h2>Bindings<a class="headerlink" href="#bindings" title="Link to this heading"></a></h2>
+<p>Wrappers exist for Python, .NET/C#, and Java.
+Install python bindings via pip:
+.. code-block:: bash</p>
+<blockquote>
+<div><p>pip install speech_core</p>
+</div></blockquote>
+<p>available  via the <a href="#id1"><span class="problematic" id="id2">`GitHub repo&lt;https://github.com/still-standing88/Py-SpeechCore&gt;`_</span></a>.</p>
+</section>
+<section id="credits">
+<h2>Credits<a class="headerlink" href="#credits" title="Link to this heading"></a></h2>
+<p>This library’s idea was inspired by Tolk.
+<a class="reference external" href="https://github.com/dkager/tolk/">GitHub page</a> I adapted a similar structure when building the library but with a little more flexibility.
+At the time this library was being built, it was used in personal projects of mine. Since there was no straightforward solution for working with SAPI 5 with full flexibility, I built a wrapper around it. Later, I expanded it to be cross-platform.</p>
+</section>
+<section id="contributions">
+<h2>Contributions<a class="headerlink" href="#contributions" title="Link to this heading"></a></h2>
+<p>Any contributions to the library or support for other screen readers are welcome.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="api.html" class="btn btn-neutral float-right" title="API Documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Oussama Ben Gatrane.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
